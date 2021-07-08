@@ -1,3 +1,4 @@
+# this is my solution for missing number question of CSES problem set
 n = int(input())
 l = sorted(list(map(int,input().split())),reverse=True)
 j = 0
