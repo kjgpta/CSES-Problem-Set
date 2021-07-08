@@ -16,9 +16,7 @@ def best_sum(target_sum, numbers):
                 combination = helper(remainder, numbers)
                 if combination is not None:
                     combination = combination + [num]
-                    if shortest_combination is None or len(combination) < len(
-                        shortest_combination
-                    ):
+                    if shortest_combination is None or len(combination) < len(shortest_combination):
                         shortest_combination = combination
         memo[target_sum] = shortest_combination
         return memo[target_sum]
